@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Belajar JavaScript</h1>
+
+    <script>
+      var awal = prompt("Angka 1 ?", 0);
+      var akhir = prompt("Angka 2 ?", 0);
+
+      awal = parseInt(awal);
+      akhir = parseInt(akhir);
+
+      var teks = "";
+
+      if (akhir < awal) {
+        for (let i = awal; i >= akhir; i--) {
+          teks += i + "<br>";
+        }
+      } else {
+        for (let i = awal; i <= akhir; i++) {
+          teks += i + "<br>";
+        }
+      }
+
+      document.write("<h3>Hasil</h3>");
+      document.write(teks);
+    </script>
+  </body>
+</html>
